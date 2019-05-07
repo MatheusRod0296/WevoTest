@@ -3,7 +3,7 @@
 namespace Domain.Commands
 {
     /// <summary>
-    /// Class  de Retorno utulizada em todos os controllers,  uma maneira de manter o padrao no retorno da aplicãção
+    /// Class de Retorno utulizada em todos os controllers,  uma maneira de manter o padrao no retorno da aplicãção
     /// </summary>
     public class CommandResult: ICommandResult
     {
@@ -11,7 +11,7 @@ namespace Domain.Commands
         {
             this.Success = success;
             this.Message = message;
-            this.Data = data;
+            this.Data = data; 
         }
 
         public bool Success { get; }
